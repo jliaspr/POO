@@ -14,6 +14,6 @@ public record ProdutoDto (
     double vlProduto,
     @NotNull(message = "Naão é possivel cadastrar o produto com a flag vazio")
             @NotBlank(message = "Naão é possivel cadastrar o produto com a flag em branco")
-    String flativo
+    String flAtivo
 ){
 }

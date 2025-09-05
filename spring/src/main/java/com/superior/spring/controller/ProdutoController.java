@@ -17,7 +17,7 @@ import java.util.List;
 @RequestMapping("api/v1/produto")
 public class ProdutoController {
     @Autowired
-    private ProdutoRepository produtoRepository;
+    ProdutoRepository produtoRepository;
     @PostMapping
     public ResponseEntity<ProdutoModel> CriarProduto
             (@Valid @RequestBody ProdutoDto produtoDto) {

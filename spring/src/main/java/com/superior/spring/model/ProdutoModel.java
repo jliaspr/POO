@@ -1,7 +1,13 @@
 package com.superior.spring.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "TBPRODUTO")
 public class ProdutoModel {
@@ -13,7 +19,7 @@ public class ProdutoModel {
     @Column(name = "DSPRODUTO")
     private String dsProduto;
     @Column(name = "VLPRODUTO")
-    private String vlProduto;
+    private double vlProduto;
     @Column(name = "FLATIVO")
-    private String fltProduto;
+    private String flAtivo;
 }
